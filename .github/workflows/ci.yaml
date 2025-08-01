@@ -16,6 +16,8 @@ jobs:
         run: npm run ci:test
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v4
+        env:
+          SECRET_COOKIE_PASSWORD: "2gyZ3GDw3LHZQKDhPmPDL3sjREVRXPr8"
         with:
           build: npm run build
           start: npm start
